@@ -43,7 +43,20 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  /home/cgun/.toast/armed/bin
+  /home/cgun/{bin,lib}
+  /home/cgun/.gem/ruby/2.2.0/bin
+  /package/host/localhost/perlbrew/bin
+  /package/host/localhost/php-5.5.10/bin
+  /package/host/localhost/ruby-2.2/bin
+  /package/host/localhost/nodejs-0.12/bin
+  /package/host/localhost/gcc-5/bin
+  /package/host/localhost/zsh/bin
+  /bin
+  /sbin
+  /usr/{bin,sbin}
   /usr/local/{bin,sbin}
+  /var/qmail/bin
   $path
 )
 
@@ -75,3 +88,6 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 export GCC_COLORS="error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01"
 export TERM="rxvt-unicode-256color"
+export RUBYVERSION=2.2
+export LD_LIBRARY_PATH=/package/host/localhost/gcc-5/lib64:$LD_LIBRARY_PATH
+export PGPORT=13318
