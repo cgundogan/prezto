@@ -13,3 +13,6 @@ fi
 # Customize to your needs...
 
 alias gfmu='git pull upstream "$(git-branch-current 2> /dev/null)"'
+
+# added by travis gem
+[ -f /home/cnk/.travis/travis.sh ] && source /home/cnk/.travis/travis.sh
